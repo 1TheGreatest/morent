@@ -1,22 +1,23 @@
 import Profiles from "@/components/profiles";
-import Button from "@/components/ui/nnnnn";
-import { AddCircle } from "iconsax-react";
-// import { ReactComponent as Icon } from "./icon.svg";
+import { MailOpen } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
+  const iconSizes = {
+    sm: 12, // Small
+    md: 14, // Medium
+    lg: 18, // Large
+  };
   return (
-    <div className="flex min-h-screen justify-center items-center">
+    <div className="flex  min-h-screen justify-center items-center">
       <div className="block">
         <Profiles />
 
-        <Button
-          label="Click Me"
-          variant="primary"
-          size="medium"
-          iconLeft={<AddCircle size={14} color="#FF8A65" />}
-          // onClick={() => console.log("Button Clicked")}
-        />
-        <AddCircle size="32" color="#FF8A65" />
+        <Button variant="primary" size="label">
+          <MailOpen size={18} />
+          <p>Label</p>
+          <MailOpen size={18} />
+        </Button>
       </div>
     </div>
   );
