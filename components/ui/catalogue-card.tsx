@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Heart } from "lucide-react";
+import { Heart, Fuel } from "lucide-react";
 
 const CatalogueCard = () => {
   return (
@@ -19,12 +19,22 @@ const CatalogueCard = () => {
         </div>
         <Heart color="red" fill="red" className="h-4 w-4 sm:h-6 sm:w-6 " />
       </div>
-      <div className="bg-red-300 flex sm:block">
+      <div className="flex sm:block">
         <div className="bg-primary-500 w-[225px] h-[102px] sm:w-[304px] sm:h-[176px]">
           CatalogueCard
         </div>
-        <div className="bg-primary-700 w-[102px] h-[102px] sm:w-[304px] sm:h-[24px]">
-          CatalogueCard
+        <div className="w-[102px] h-[102px] sm:w-[304px] sm:h-[24px]">
+          <div className="bg-red-100 h-[74px] w-[70px] my-[14px] mx-[16px] flex flex-col justify-between">
+            <div className="flex gap-1 text-xs font-medium text-secondary-300">
+              <Fuel
+                //  color="red"
+                className="h-[14px] w-[14px] sm:h-6 sm:w-6 "
+              />
+              <p>80L</p>
+            </div>
+            <p>go home</p>
+            <p>go home</p>
+          </div>
         </div>
       </div>
       <div
